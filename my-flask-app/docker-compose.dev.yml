@@ -1,0 +1,19 @@
+services:
+  app:
+    environment:
+      - FLASK_ENV=development
+      - DEBUG=True
+    volumes:
+      - ./app:/app:rw
+    networks:
+      - dev-net
+  db:
+    ports:
+      - "3306:3306"
+    networks:
+      - dev-net
+volumes:
+  db-data:
+networks:
+  dev-net:
+    driver: bridge
