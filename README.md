@@ -112,7 +112,7 @@ MYSQL_PORT=3306
    docker build -t matheushcg04/flask-frete:1.0 ./app
    docker push matheushcg04/flask-frete:1.0
    ```
-3. [Link para a imagem no Docker Hub](https://hub.docker.com/)
+3. [Repo Docker HUB](https://hub.docker.com/repository/docker/matheushcg04/flask-frete/general)
 
 ---
 
@@ -122,7 +122,7 @@ Execute:
 ```sh
 docker scout cves seu-usuario/flask-frete:1.0
 ```
-Inclua o resultado ou print no repositório.
+![Análise de Segurança](image.png)
 
 ---
 
